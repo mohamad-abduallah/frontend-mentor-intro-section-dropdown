@@ -1,0 +1,14 @@
+@import "../abstracts";
+
+.navbar {
+  margin-top: 15px;
+
+  .navbar-nav {
+
+    .nav-link {
+      font-size: 14px;
+      padding-right: 32px;
+      font-weight: 700;
+    }
+  }
+}
