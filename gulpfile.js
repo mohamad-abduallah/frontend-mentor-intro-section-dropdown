@@ -14,7 +14,7 @@ gulp.task('QR-code-css', function () {
         .pipe(concat('style.css'))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('dist/assets/style'))
-        .pipe(notify('QR-code-css tag is done'))
+        .pipe(notify('sass style is done'))
 });
 
 
@@ -22,7 +22,7 @@ gulp.task('QR-code-js', function () {
     return gulp.src('project/js/*.js')
         .pipe(concat('main.js'))
         .pipe(gulp.dest('dist/assets/js'))
-        .pipe(notify('QR-code-js tag is done'))
+        .pipe(notify('js code is done'))
 });
 
 //watch task

@@ -5,10 +5,62 @@
 
   .navbar-nav {
 
-    .nav-link {
-      font-size: 14px;
-      padding-right: 32px;
-      font-weight: 700;
+    .nav-item {
+      .nav-link {
+        font-size: 14px;
+        padding-right: 32px;
+        font-weight: 700;
+
+        &:hover {
+          color: $almost-black;
+        }
+
+      }
+
+      .rotate{
+        transform: rotate(180deg);
+        transition: transform 0.9s ease;
+      }
+
+      .btn-mentor {
+        border-radius: 18px;
+
+        &-white {
+          border: 2px solid $medium-gray;
+          padding: 10px 20px;
+
+          &:hover {
+            border: 2px solid $almost-black;
+          }
+        }
+      }
+    }
+
+    .dropdown-menu {
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+      right: 30px;
+      left: unset;
+      border: 1px solid $medium-gray;
+      border-radius: 12px;
+      padding: 20px 10px;
+      margin-top: 10px;
+      column-gap: 10px;
+
+      .dropdown-item {
+        margin-bottom: 10px;
+        font-weight: 700;
+        font-size: 14px;
+        color: $medium-gray !important;
+
+      }
+    }
+
+    .show {
+      opacity: 1;
+      transition: opacity 0.9s ease;
     }
   }
 }

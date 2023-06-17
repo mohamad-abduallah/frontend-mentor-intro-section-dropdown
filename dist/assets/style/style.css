@@ -2,6 +2,7 @@ body {
   font-family: "Epilogue", sans-serif;
   background: hsl(0, 0%, 98%);
   font-size: 18px;
+  min-height: 100vh;
 }
 
 .header .header-text {
@@ -13,9 +14,50 @@ body {
 .navbar {
   margin-top: 15px;
 }
-.navbar .navbar-nav .nav-link {
+.navbar .navbar-nav .nav-item .nav-link {
   font-size: 14px;
   padding-right: 32px;
   font-weight: 700;
+}
+.navbar .navbar-nav .nav-item .nav-link:hover {
+  color: hsl(0, 0%, 8%);
+}
+.navbar .navbar-nav .nav-item .rotate {
+  transform: rotate(180deg);
+  transition: transform 0.9s ease;
+}
+.navbar .navbar-nav .nav-item .btn-mentor {
+  border-radius: 18px;
+}
+.navbar .navbar-nav .nav-item .btn-mentor-white {
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 10px 20px;
+}
+.navbar .navbar-nav .nav-item .btn-mentor-white:hover {
+  border: 2px solid hsl(0, 0%, 8%);
+}
+.navbar .navbar-nav .dropdown-menu {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  right: 30px;
+  left: unset;
+  border: 1px solid hsl(0, 0%, 41%);
+  border-radius: 12px;
+  padding: 20px 10px;
+  margin-top: 10px;
+  -moz-column-gap: 10px;
+  column-gap: 10px;
+}
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  color: hsl(0, 0%, 41%) !important;
+}
+.navbar .navbar-nav .show {
+  opacity: 1;
+  transition: opacity 0.9s ease;
 }
 /*# sourceMappingURL=style.css.map */
