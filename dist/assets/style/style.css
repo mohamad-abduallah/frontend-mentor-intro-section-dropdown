@@ -5,15 +5,42 @@ body {
   min-height: 100vh;
 }
 
+.btn-mentor {
+  text-decoration: none;
+  font-size: 14px;
+  padding-right: 32px;
+  font-weight: 700;
+  border-radius: 13px;
+}
+.btn-mentor-white {
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 10px 20px;
+}
+.btn-mentor-white:hover {
+  border: 2px solid hsl(0, 0%, 8%);
+  transition: all 0.5s ease;
+}
+.btn-mentor-black {
+  font-size: 17px;
+  padding: 17px 27px;
+  background: hsl(0, 0%, 8%);
+  color: hsl(0, 0%, 98%);
+  border: 1px solid hsl(0, 0%, 8%);
+  margin-left: 80px;
+  margin-bottom: 135px;
+}
+.btn-mentor-black:hover {
+  background: hsl(0, 0%, 98%);
+  color: hsl(0, 0%, 8%);
+  transition: all 0.5s ease;
+}
+
 .header .header-text {
-  font-size: 2.3rem;
+  font-size: 2.5rem;
   font-weight: 700;
   margin: 0 60px 0 0;
 }
 
-.navbar {
-  margin-top: 15px;
-}
 .navbar .navbar-nav .nav-item .nav-link {
   font-size: 14px;
   padding-right: 32px;
@@ -30,7 +57,7 @@ body {
   transition: transform 0.5s ease;
 }
 .navbar .navbar-nav .nav-item .btn-mentor {
-  border-radius: 18px;
+  border-radius: 13px;
 }
 .navbar .navbar-nav .nav-item .btn-mentor-white {
   border: 2px solid hsl(0, 0%, 41%);
@@ -38,18 +65,19 @@ body {
 }
 .navbar .navbar-nav .nav-item .btn-mentor-white:hover {
   border: 2px solid hsl(0, 0%, 8%);
+  transition: all 0.5s ease;
 }
 .navbar .navbar-nav .dropdown-menu {
-  display: flex;
+  display: none;
   flex-direction: column;
-  opacity: 1;
-  transform: translateY(100%) scale(0);
-  right: 30px;
-  left: unset;
-  border-radius: 12px;
-  padding: 20px 10px;
+  opacity: 0;
+  transition: opacity 0.5s ease;
   -moz-column-gap: 10px;
   column-gap: 10px;
+  border-radius: 12px;
+  border: none;
+  padding: 20px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 }
 .navbar .navbar-nav .dropdown-menu .dropdown-item {
   margin-bottom: 10px;
@@ -57,8 +85,43 @@ body {
   font-size: 14px;
   color: hsl(0, 0%, 41%) !important;
 }
+.navbar .navbar-nav .dropdown-list {
+  right: 30px;
+  left: unset;
+}
 .navbar .navbar-nav .show {
+  display: flex;
   opacity: 1;
-  transform: translateY(100%) scale(0);
+  transition: opacity 0.5s ease;
+}
+
+main .main-title {
+  font-size: 75px;
+  font-weight: bold;
+  margin-top: 185px;
+  margin-bottom: 90px;
+}
+main .main-desc {
+  font-weight: 600;
+  color: hsl(0, 0%, 41%);
+  max-width: 80%;
+  margin-top: unset;
+  margin-bottom: 70px;
+  margin-left: 80px;
+}
+main .icons {
+  margin-left: 80px;
+}
+main .icons .icon {
+  margin-right: 23px;
+}
+main .product-img {
+  margin-top: 50px;
+  width: 636px;
+  height: 800px;
+}
+
+.container {
+  min-height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

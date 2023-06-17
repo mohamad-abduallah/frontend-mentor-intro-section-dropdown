@@ -1,3 +1,40 @@
-.main-title {
+@import "../abstracts";
 
+main {
+
+  .main-title {
+    font-size: 75px;
+    font-weight: bold;
+    margin: {
+      top:185px;
+      bottom: 90px;
+    };
+  }
+
+  .main-desc {
+    font-weight: 600;
+    color: $medium-gray;
+    max-width: 80%;
+    margin: {
+      top:unset;
+      bottom: 70px;
+      left: 80px;
+    };
+  }
+
+  .icons{
+    margin: {
+      left: 80px;
+    };
+
+    .icon{
+      margin-right: 23px;
+    }
+  }
+
+  .product-img {
+    margin-top: 50px;
+    width: 636px;
+    height: 800px;
+  }
 }

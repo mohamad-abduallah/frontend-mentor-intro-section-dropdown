@@ -1,11 +1,11 @@
 @import "../abstracts";
 
 .navbar {
-  margin-top: 15px;
 
   .navbar-nav {
 
     .nav-item {
+
       .nav-link {
         font-size: 14px;
         padding-right: 32px;
@@ -14,20 +14,19 @@
         &:hover {
           color: $almost-black;
         }
-
       }
 
       .fa-solid {
         transition: transform 0.5s ease;
       }
 
-      .rotate{
+      .rotate {
         transform: rotate(180deg);
         transition: transform 0.5s ease;
       }
 
       .btn-mentor {
-        border-radius: 18px;
+        border-radius: 13px;
 
         &-white {
           border: 2px solid $medium-gray;
@@ -35,21 +34,22 @@
 
           &:hover {
             border: 2px solid $almost-black;
+            transition: all 0.5s ease;
           }
         }
       }
     }
 
     .dropdown-menu {
-      display: flex;
+      display: none;
       flex-direction: column;
-      opacity: 1;
-      transform: translateY(100%) scale(0);
-      right: 30px;
-      left: unset;
-      border-radius: 12px;
-      padding: 20px 10px;
+      opacity: 0;
+      transition: opacity 0.5s ease;
       column-gap: 10px;
+      border-radius: 12px;
+      border: none;
+      padding: 20px 10px;
+      box-shadow: rgba(100, 100, 111, 0.2) 0 7px 29px 0;
 
       .dropdown-item {
         margin-bottom: 10px;
@@ -60,9 +60,16 @@
       }
     }
 
+    .dropdown-list {
+      right: 30px;
+      left: unset;
+    }
+
     .show {
+      display: flex;
       opacity: 1;
-      transform: translateY(100%) scale(0);
+      transition: opacity 0.5s ease;
+
     }
   }
 }
