@@ -17,9 +17,13 @@
 
       }
 
+      .fa-solid {
+        transition: transform 0.5s ease;
+      }
+
       .rotate{
         transform: rotate(180deg);
-        transition: transform 0.9s ease;
+        transition: transform 0.5s ease;
       }
 
       .btn-mentor {
@@ -39,14 +43,12 @@
     .dropdown-menu {
       display: flex;
       flex-direction: column;
-      opacity: 0;
-      transition: opacity 0.5s ease;
+      opacity: 1;
+      transform: translateY(100%) scale(0);
       right: 30px;
       left: unset;
-      border: 1px solid $medium-gray;
       border-radius: 12px;
       padding: 20px 10px;
-      margin-top: 10px;
       column-gap: 10px;
 
       .dropdown-item {
@@ -60,7 +62,7 @@
 
     .show {
       opacity: 1;
-      transition: opacity 0.9s ease;
+      transform: translateY(100%) scale(0);
     }
   }
 }

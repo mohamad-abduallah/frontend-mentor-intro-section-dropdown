@@ -22,9 +22,12 @@ body {
 .navbar .navbar-nav .nav-item .nav-link:hover {
   color: hsl(0, 0%, 8%);
 }
+.navbar .navbar-nav .nav-item .fa-solid {
+  transition: transform 0.5s ease;
+}
 .navbar .navbar-nav .nav-item .rotate {
   transform: rotate(180deg);
-  transition: transform 0.9s ease;
+  transition: transform 0.5s ease;
 }
 .navbar .navbar-nav .nav-item .btn-mentor {
   border-radius: 18px;
@@ -39,14 +42,12 @@ body {
 .navbar .navbar-nav .dropdown-menu {
   display: flex;
   flex-direction: column;
-  opacity: 0;
-  transition: opacity 0.5s ease;
+  opacity: 1;
+  transform: translateY(100%) scale(0);
   right: 30px;
   left: unset;
-  border: 1px solid hsl(0, 0%, 41%);
   border-radius: 12px;
   padding: 20px 10px;
-  margin-top: 10px;
   -moz-column-gap: 10px;
   column-gap: 10px;
 }
@@ -58,6 +59,6 @@ body {
 }
 .navbar .navbar-nav .show {
   opacity: 1;
-  transition: opacity 0.9s ease;
+  transform: translateY(100%) scale(0);
 }
 /*# sourceMappingURL=style.css.map */
