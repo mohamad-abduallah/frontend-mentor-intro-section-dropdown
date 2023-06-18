@@ -1,0 +1,146 @@
+@import "../abstracts/media-query";
+@import "../abstracts/variables";
+@import "../abstracts/colors";
+
+@include media-mobile-md {
+
+  main {
+    .main-title {
+      gap: 10px;
+      font-size: 35px;
+      margin: {
+        top: 50px;
+        bottom: 15px;
+        left: unset;
+      };
+    }
+
+    .main-desc {
+      font-weight: 400;
+      text-align: center;
+      font-size: 16px;
+      max-width: 100%;
+      margin: {
+        top: unset;
+        bottom: 28px;
+        left: unset;
+      };
+    }
+
+    .icons {
+      display: block;
+      margin: {
+        left: unset;
+      };
+
+      .icon {
+        max-width: 20%;
+        margin-right: 13px;
+      }
+    }
+
+    .product-img {
+      margin-top: unset;
+    }
+
+
+    .btn-mentor {
+      border-radius: 13px;
+      padding: 10px 20px;
+
+      &-white {
+        display: flex;
+        font-size: 14px;
+        padding: 10px 20px;
+      }
+
+      &-black {
+        font-size: 17px;
+        padding: 10px 25px;
+        margin: {
+          left: unset;
+          bottom: 45px;
+        };
+
+      }
+    }
+  }
+}
+
+@include media-mobile-lg {
+
+  .navbar {
+
+    .navbar-toggler {
+
+      border-color: unset;
+      border: unset;
+
+      .navbar-open {
+        position: relative;
+        z-index: 9999;
+        display: flex;
+        transform: rotate(0deg);
+        width: 30px;
+        height: 3px;
+        background: $almost-black;
+
+        &:before {
+          content: "";
+          position: absolute;
+          transform: rotate(0deg);
+          top: -10px;
+          width: 30px;
+          height: 3px;
+          background: $almost-black;
+        }
+
+        &:after {
+          display: flex;
+          content: "";
+          position: absolute;
+          top: 10px;
+          width: 30px;
+          height: 3px;
+          background: $almost-black;
+        }
+
+
+      }
+
+      &:focus {
+        box-shadow: unset;
+      }
+    }
+
+    .rotate-btn {
+
+      .navbar-open {
+        transform: rotate(125deg);
+        transition: transform 0.5s ease;
+      }
+
+      .navbar-open:before {
+        top: 0;
+        transform: rotate(-65deg);
+        transition: transform 0.5s ease;
+      }
+
+      .navbar-open:after {
+        display: none;
+      }
+    }
+
+    .offcanvas-end {
+      border-left: 1px solid rgba(0, 0, 0, .2);
+      transform: translateX(100%);
+    }
+
+
+    .show-menu {
+      transform: translateX(35%);
+      transition: transform 0.5s ease;
+    }
+
+  }
+}

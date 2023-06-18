@@ -2,12 +2,13 @@
 
 .btn-mentor {
   text-decoration: none;
-  font-size: 14px;
-  padding-right: 32px;
   font-weight: 700;
   border-radius: 13px;
+  padding: 10px 20px;
 
   &-white {
+    display: flex;
+    font-size: 14px;
     border: 2px solid $medium-gray;
     padding: 10px 20px;
 

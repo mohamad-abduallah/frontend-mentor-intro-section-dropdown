@@ -1,40 +1,61 @@
 @import "../abstracts";
 
+.header {
+
+  .header-text {
+    font-size: 2rem;
+  }
+}
+
+.nav-item {
+
+  .nav-link {
+    font-size: 14px;
+    padding-right: 32px;
+    font-weight: 700;
+  }
+
+  .btn-mentor-white {
+    padding: 10px 20px;
+  }
+
+}
+
 main {
 
   .main-title {
     font-size: 75px;
     font-weight: bold;
     margin: {
-      top:185px;
+      top: 185px;
       bottom: 90px;
+      left: 80px;
     };
   }
 
   .main-desc {
     font-weight: 600;
     color: $medium-gray;
-    max-width: 80%;
+    max-width: 70%;
     margin: {
-      top:unset;
+      top: unset;
       bottom: 70px;
       left: 80px;
     };
   }
 
-  .icons{
+  .icons {
     margin: {
       left: 80px;
     };
 
-    .icon{
+    .icon {
       margin-right: 23px;
     }
   }
 
   .product-img {
     margin-top: 50px;
-    width: 636px;
-    height: 800px;
+    max-width: 100%;
   }
 }
