@@ -103,9 +103,8 @@ body {
   }
   .navbar-collapse .btns .nav-item .nav-menu {
     padding-right: unset;
-    width: 65%;
+    width: 63%;
     text-align: center;
-    display: flex;
     justify-content: center;
   }
 }
@@ -146,6 +145,10 @@ main .icons .icon {
 main .product-img {
   margin-top: 50px;
   max-width: 100%;
+}
+
+.container {
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
