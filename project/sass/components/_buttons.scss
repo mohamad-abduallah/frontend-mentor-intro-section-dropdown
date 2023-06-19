@@ -4,7 +4,6 @@
   text-decoration: none;
   font-weight: 700;
   border-radius: 13px;
-  padding: 10px 20px;
 
   &-white {
     display: flex;
@@ -19,14 +18,15 @@
   }
 
   &-black {
+    display: flex;
     font-size: 17px;
     padding: 17px 27px;
     background: $almost-black;
     color: $almost-white;
     border: 1px solid $almost-black;
     margin: {
+      bottom: 100px;
       left: 80px;
-      bottom: 135px;
     };
 
     &:hover {

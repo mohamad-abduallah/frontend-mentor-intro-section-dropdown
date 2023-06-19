@@ -3,7 +3,6 @@ const  gulp = require('gulp'),
        prefix = require('gulp-autoprefixer'),
        sass = require('gulp-sass')(require('sass')),
        sourcemaps = require('gulp-sourcemaps'),
-       uglify = require('gulp-uglify'),
        notify = require("gulp-notify");
 
 gulp.task('QR-code-css', function () {
@@ -17,17 +16,8 @@ gulp.task('QR-code-css', function () {
         .pipe(notify('sass style is done'))
 });
 
-gulp.task('QR-code-js', function () {
-    return gulp.src('project/js/*.js')
-        .pipe(prefix())
-        .pipe(concat('main.js'))
-        .pipe(gulp.dest('dist/assets/js'))
-        .pipe(notify('js code is done'))
-});
-
 //watch task
 gulp.task('watch', function () {
     gulp.watch('project/sass/**/*.scss', gulp.series('QR-code-css'));
-    gulp.watch('project/js/*.js', gulp.series('QR-code-js'));
 })
 gulp.task('default', gulp.parallel('watch'));

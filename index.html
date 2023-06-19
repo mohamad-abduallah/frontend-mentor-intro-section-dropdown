@@ -16,17 +16,17 @@
 <body>
 <div class="container">
     <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-md-start">
             <h1 class="header-text">snap</h1>
-            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+            <button class="navbar-toggler" type="button">
                 <span class="navbar-open"></span>
             </button>
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas offcanvas-end">
                 <div class="offcanvas-body">
-                    <div class="collapse navbar-collapse flex-column flex-md-row justify-content-md-between align-items-start show">
-                        <ul class="navbar-nav">
+                    <div class="collapse navbar-collapse flex-column flex-md-row justify-content-md-between align-items-start">
+                        <ul class="navbar-nav d-flex gap-2">
                             <li class="nav-item dropdown">
-                                <a class="nav-link btn-mobile-one d-flex flex-direction-row align-items-center gap-2"
+                                <a class="nav-link btn-mobile-one d-flex flex-direction-row align-items-center gap-3"
                                    href="#">
                                     Features
                                     <i class="fa-solid fa-angle-down fa-xs rotate-mobile-one"></i>
@@ -62,7 +62,7 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link btn-mobile-tow d-flex flex-direction-row align-items-center gap-2" href="#">
+                                <a class="nav-link btn-mobile-tow d-flex flex-direction-row align-items-center gap-3" href="#">
                                     Company
                                     <i class="fa-solid fa-angle-down fa-xs rotate-mobile-tow"></i>
                                 </a>
@@ -88,8 +88,8 @@
                             </li>
                         </ul>
                         <ul class="navbar-nav btns">
-                            <li class="nav-item d-flex align-items-center">
-                                <a class="nav-link nav-menu" href="#">Login</a>
+                            <li class="nav-item">
+                                <a class="nav-link nav-menu pe-0" href="#">Login</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link nav-menu btn-mentor btn-mentor-white d-flex align-items-center" href="#">Register</a>
@@ -170,12 +170,13 @@
                     </li>
                 </ul>
             </div>
+            <div class="modal-backdrop fade"></div>
         </nav>
     </div>
 
     <main>
         <div class="row d-flex flex-md-row flex-column-reverse">
-            <div class="col-12 col-md-6 d-flex flex-column">
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center">
                 <h2 class="main-title d-flex justify-content-center flex-md-column">
                     <span>Make</span> remote work
                 </h2>
@@ -185,7 +186,7 @@
                     productivity soar.
                 </p>
 
-                <div class="d-flex justify-content-center justify-content-md-start">
+                <div class="d-flex justify-content-center justify-content-md-start w-100">
                     <a class="btn-mentor btn-mentor-black" href="#">Learn more</a>
                 </div>
 
@@ -200,9 +201,9 @@
                 </div>
             </div>
 
-            <div class="col-12 col-md-6">
+            <div class="col-12 col-md-6 d-flex justify-content-center no-padding">
                 <picture>
-                    <source media="(max-width: 768px)" srcset="images/image-hero-mobile.png">
+                    <source media="(max-width: 768px)" srcset="images/image-hero-mobile.png" style="margin-left: -12px; margin-right: 12px; width: auto; ">
 
                     <img src="images/image-hero-desktop.png" alt="Product mobile image" class="product-img">
                 </picture>
@@ -211,6 +212,6 @@
     </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="project/js/main.js"></script>
+<script src="dist/assets/js/main.js"></script>
 </body>
 </html>

@@ -14,7 +14,8 @@ const showSecondListMobile = document.querySelector('.dropdown-mobile-tow');
 
 const btnShowMenu = document.querySelector('.navbar-toggler');
 const addMenu = document.querySelector('.offcanvas-end');
-
+const showListMenu= document.querySelector('.navbar-collapse');
+const modalBackdrop = document.querySelector('.modal-backdrop');
 
 
 //Show list in menu Desktop
@@ -62,8 +63,14 @@ btnMobileTow.addEventListener('click', function () {
 //open the menu bar
 btnShowMenu.addEventListener('click', function () {
     addMenu.classList.toggle('show-menu');
-    addMenu.classList.remove('show');
+    showListMenu.classList.toggle('show');
+    modalBackdrop.classList.toggle('show');
+    modalBackdrop.classList.toggle('disFlex');
     btnShowMenu.classList.toggle('rotate-btn');
-
+    if (addMenu.style.visibility === 'visible') {
+        addMenu.style.visibility = 'hidden';
+    } else {
+        addMenu.style.visibility = 'visible';
+    }
 });
 

@@ -29,32 +29,8 @@
         padding: 10px 20px;
       }
 
-    }
-  }
-}
-
-
-@include media-mobile-lg {
-
-  .navbar-collapse {
-    margin-top: 40px;
-
-    .dropdown-menu {
-      box-shadow: unset;
-    }
-
-    .btns {
-      width: 100%;
-      gap: 10px;
-
-      .nav-item {
-
-        .nav-menu {
-          padding-right: unset;
-          width: 63%;
-          text-align: center;
-          justify-content: center;
-        }
+      &:hover {
+        color: unset;
       }
     }
   }

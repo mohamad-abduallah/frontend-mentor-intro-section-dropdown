@@ -25,11 +25,10 @@ main {
 
   .main-title {
     font-size: 75px;
-    font-weight: bold;
+    font-weight: 700;
     margin: {
-      top: 185px;
-      bottom: 90px;
-      left: 80px;
+      top: 100px;
+      bottom: 40px;
     };
   }
 
@@ -39,15 +38,11 @@ main {
     max-width: 70%;
     margin: {
       top: unset;
-      bottom: 70px;
-      left: 80px;
+      bottom: 56px;
     };
   }
 
   .icons {
-    margin: {
-      left: 80px;
-    };
 
     .icon {
       margin-right: 23px;
@@ -57,5 +52,6 @@ main {
   .product-img {
     margin-top: 50px;
     max-width: 100%;
+    max-height: 600px;
   }
 }
