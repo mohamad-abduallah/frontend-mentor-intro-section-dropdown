@@ -12,6 +12,8 @@
     <title>Frontend Mentor | Intro section with dropdown navigation</title>
     <link rel="stylesheet" href="dist/assets/style/style.css">
 
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script src="dist/assets/js/jquery.min.js "></script>
 </head>
 <body>
 <div class="container">
@@ -25,16 +27,15 @@
 
             <div class="offcanvas offcanvas-end">
                 <div class="offcanvas-body">
-                    <div class="collapse navbar-collapse flex-column flex-md-row justify-content-md-between align-items-start">
+                    <div class="collapse navbar-collapse flex-column align-items-start show flex-md-row justify-content-md-between">
                         <ul class="navbar-nav d-flex gap-2">
                             <li class="nav-item dropdown">
-                                <a class="nav-link btn-mobile-one d-flex flex-direction-row align-items-center gap-3"
-                                   href="#">
+                                <a class="nav-link nav-rotate-one d-flex flex-direction-row align-items-center gap-2" href="#">
                                     Features
-                                    <i class="fa-solid fa-angle-down fa-xs rotate-mobile-one"></i>
+                                    <i class="fa-solid fa-angle-down fa-xs rotate-one"></i>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-mobile-one">
+                                <ul class="dropdown-menu dropdown-list">
                                     <li>
                                         <a class="dropdown-item d-flex gap-3" href="#">
                                             <img src="images/icon-todo.svg" alt="Toto list icon" width="17px" height="17px">
@@ -64,14 +65,13 @@
                                     </li>
                                 </ul>
                             </li>
-
                             <li class="nav-item dropdown">
-                                <a class="nav-link btn-mobile-tow d-flex flex-direction-row align-items-center gap-3" href="#">
+                                <a class="nav-link nav-rotate-tow d-flex flex-direction-row align-items-center gap-2" href="#">
                                     Company
-                                    <i class="fa-solid fa-angle-down fa-xs rotate-mobile-tow"></i>
+                                    <i class="fa-solid fa-angle-down fa-xs rotate-tow"></i>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-mobile-tow">
+                                <ul class="dropdown-menu dropdown-list-tow">
                                     <li>
                                         <a class="dropdown-item d-flex" href="#">History</a>
                                     </li>
@@ -85,10 +85,10 @@
                                     </li>
                                 </ul>
                             </li>
+
                             <li class="nav-item">
                                 <a class="nav-link" href="#">Careers</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="#">About</a>
                             </li>
@@ -107,7 +107,7 @@
                 </div>
             </div>
 
-            <div class="collapse navbar-collapse flex-column flex-md-row justify-content-md-between align-items-start">
+            <div class="collapse navbar-collapse flex-column align-items-start flex-md-row justify-content-md-between">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
                         <a class="nav-link nav-rotate-one d-flex flex-direction-row align-items-center gap-2" href="#">
@@ -189,7 +189,7 @@
     </div>
 
     <main>
-        <div class="row d-flex flex-md-row flex-column-reverse">
+        <div class="row d-flex flex-column-reverse flex-md-row">
             <div class="col-12 col-md-6 d-flex flex-column align-items-center">
                 <h2 class="main-title d-flex justify-content-center flex-md-column">
                     <span>Make</span> remote work
@@ -200,7 +200,7 @@
                     productivity soar.
                 </p>
 
-                <div class="d-flex justify-content-center justify-content-md-start w-100">
+                <div class="d-flex justify-content-center w-100 justify-content-md-start">
                     <a class="btn-mentor btn-mentor-black" href="#">Learn more</a>
                 </div>
 
