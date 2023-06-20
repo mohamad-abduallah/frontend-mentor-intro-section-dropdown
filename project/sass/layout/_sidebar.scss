@@ -1,6 +1,7 @@
 @import "../abstracts";
 
 .navbar {
+  padding: 16px 0;
 
   .navbar-nav {
 
@@ -8,21 +9,16 @@
 
       .nav-link {
         font-size: 14px;
-        padding-right: 32px;
+        margin-inline-end: 32px;
         font-weight: 700;
+
+        &:last-child {
+          //margin: unset;
+        }
 
         &:hover {
           color: $almost-black;
         }
-      }
-
-      .fa-solid {
-        transition: transform 0.5s ease;
-      }
-
-      .rotate {
-        transform: rotate(180deg);
-        transition: transform 0.5s ease;
       }
 
       .btn-mentor-white {
@@ -32,6 +28,12 @@
       &:hover {
         color: unset;
       }
+    }
+
+    .show-menu {
+      display: flex;
+      opacity: 1;
+      transition: opacity 0.5s ease
     }
   }
 }

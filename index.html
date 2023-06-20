@@ -18,47 +18,52 @@
 <body>
 <div class="container">
     <div class="header">
-        <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-md-start">
-            <h1 class="header-text">snap</h1>
+        <nav class="navbar navbar-expand-lg navbar-light d-flex align-items-md-center">
+            <a href="#" class="header-logo"><img src="images/logo.svg" alt="logo of website" width="80px" height="auto"></a>
 
             <button class="navbar-toggler" type="button">
-                <span class="navbar-open"></span>
+                <img src="images/icon-menu.svg" alt="open menu">
             </button>
 
             <div class="offcanvas offcanvas-end">
+                <div class="offcanvas-header justify-content-end">
+                    <button type="button" class="navbar-toggler">
+                        <img src="images/icon-close-menu.svg" alt="close menu">
+                    </button>
+                </div>
                 <div class="offcanvas-body">
-                    <div class="collapse navbar-collapse flex-column align-items-start show flex-md-row justify-content-md-between">
+                    <div class="collapse navbar-collapse show">
                         <ul class="navbar-nav d-flex gap-2">
                             <li class="nav-item dropdown">
-                                <a class="nav-link nav-rotate-one d-flex flex-direction-row align-items-center gap-2" href="#">
+                                <a href="#" class="nav-link d-flex flex-direction-row align-items-center gap-2" id="navbarDropdownMobileFeatures" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Features
-                                    <i class="fa-solid fa-angle-down fa-xs rotate-one"></i>
+                                    <i class="fa-solid fa-angle-down fa-xs"></i>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-list">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMobileFeatures">
                                     <li>
-                                        <a class="dropdown-item d-flex gap-3" href="#">
+                                        <a href="#" class="dropdown-item d-flex gap-3">
                                             <img src="images/icon-todo.svg" alt="Toto list icon" width="17px" height="17px">
                                             Todo List
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item d-flex gap-3" href="#">
+                                        <a href="#" class="dropdown-item d-flex gap-3">
                                             <img src="images/icon-calendar.svg" alt="Toto list icon" width="17px" height="17px">
                                             Calendar
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item d-flex gap-3" href="#">
+                                        <a href="#" class="dropdown-item d-flex gap-3">
                                             <img src="images/icon-reminders.svg" alt="Toto list icon" width="17px" height="17px">
                                             Reminders
                                         </a>
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item d-flex gap-3" href="#">
+                                        <a href="#" class="dropdown-item d-flex gap-3">
                                             <img src="images/icon-planning.svg" alt="Toto list icon" width="17px" height="17px">
                                             Planning
                                         </a>
@@ -66,79 +71,79 @@
                                 </ul>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link nav-rotate-tow d-flex flex-direction-row align-items-center gap-2" href="#">
+                                <a href="#" class="nav-link d-flex flex-direction-row align-items-center gap-2" id="navbarDropdownMobileCompany" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Company
-                                    <i class="fa-solid fa-angle-down fa-xs rotate-tow"></i>
+                                    <i class="fa-solid fa-angle-down fa-xs"></i>
                                 </a>
 
-                                <ul class="dropdown-menu dropdown-list-tow">
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMobileCompany">
                                     <li>
-                                        <a class="dropdown-item d-flex" href="#">History</a>
+                                        <a href="#" class="dropdown-item d-flex">History</a>
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item d-flex" href="#">Our team</a>
+                                        <a href="#" class="dropdown-item d-flex">Our team</a>
                                     </li>
 
                                     <li>
-                                        <a class="dropdown-item d-flex" href="#">Blog</a>
+                                        <a href="#" class="dropdown-item d-flex">Blog</a>
                                     </li>
                                 </ul>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Careers</a>
+                                <a href="#" class="nav-link">Careers</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">About</a>
+                                <a href="#" class="nav-link">About</a>
                             </li>
                         </ul>
 
                         <ul class="navbar-nav btns">
                             <li class="nav-item">
-                                <a class="nav-link nav-menu pe-0" href="#">Login</a>
+                                <a href="#" class="nav-link nav-menu pe-0">Login</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link nav-menu btn-mentor btn-mentor-white d-flex align-items-center" href="#">Register</a>
+                                <a href="#" class="nav-link nav-menu btn-mentor btn-mentor-white d-flex align-items-center">Register</a>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
 
-            <div class="collapse navbar-collapse flex-column align-items-start flex-md-row justify-content-md-between">
+            <div class="collapse navbar-collapse justify-content-md-between">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link nav-rotate-one d-flex flex-direction-row align-items-center gap-2" href="#">
+                        <a href="#" class="nav-link d-flex flex-direction-row align-items-center gap-2" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Features
-                            <i class="fa-solid fa-angle-down fa-xs rotate-one"></i>
+                            <div class="rotate"></div>
                         </a>
 
-                        <ul class="dropdown-menu dropdown-list">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <li>
-                                <a class="dropdown-item d-flex gap-3" href="#">
+                                <a href="#" class="dropdown-item d-flex gap-3">
                                     <img src="images/icon-todo.svg" alt="Toto list icon" width="17px" height="17px">
                                     Todo List
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item d-flex gap-3" href="#">
+                                <a href="#" class="dropdown-item d-flex gap-3">
                                     <img src="images/icon-calendar.svg" alt="Toto list icon" width="17px" height="17px">
                                     Calendar
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item d-flex gap-3" href="#">
+                                <a href="#" class="dropdown-item d-flex gap-3">
                                     <img src="images/icon-reminders.svg" alt="Toto list icon" width="17px" height="17px">
                                     Reminders
                                 </a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item d-flex gap-3" href="#">
+                                <a href="#" class="dropdown-item d-flex gap-3">
                                     <img src="images/icon-planning.svg" alt="Toto list icon" width="17px" height="17px">
                                     Planning
                                 </a>
@@ -146,40 +151,40 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link nav-rotate-tow d-flex flex-direction-row align-items-center gap-2" href="#">
+                        <a href="#" class="nav-link d-flex flex-direction-row align-items-center gap-2" id="navbarDropdownCompany" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Company
-                            <i class="fa-solid fa-angle-down fa-xs rotate-tow"></i>
+                            <div class="rotate"></div>
                         </a>
 
-                        <ul class="dropdown-menu dropdown-list-tow">
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownCompany">
                             <li>
-                                <a class="dropdown-item d-flex" href="#">History</a>
+                                <a href="#" class="dropdown-item">History</a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item d-flex" href="#">Our team</a>
+                                <a href="#" class="dropdown-item">Our team</a>
                             </li>
 
                             <li>
-                                <a class="dropdown-item d-flex" href="#">Blog</a>
+                                <a href="#" class="dropdown-item">Blog</a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Careers</a>
+                        <a href="#" class="nav-link">Careers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
+                        <a href="#" class="nav-link">About</a>
                     </li>
                 </ul>
 
                 <ul class="navbar-nav">
                     <li class="nav-item d-flex align-items-center">
-                        <a class="nav-link" href="#">Login</a>
+                        <a href="#" class="nav-link">Login</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link btn-mentor btn-mentor-white d-flex align-items-center" href="#">Register</a>
+                        <a href="#" class="nav-link btn-mentor btn-mentor-white d-flex align-items-center">Register</a>
                     </li>
                 </ul>
             </div>
@@ -189,8 +194,8 @@
     </div>
 
     <main>
-        <div class="row d-flex flex-column-reverse flex-md-row">
-            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-md-end ">
+        <div class="row flex-column-reverse mt-50 flex-md-row">
+            <div class="col-12 col-md-6 d-flex flex-column justify-content-between align-items-center align-items-md-start">
                 <h2 class="main-title d-flex justify-content-center flex-md-column">
                     <span>Make</span> remote work
                 </h2>
@@ -200,26 +205,34 @@
                     productivity soar.
                 </p>
 
-                <div class="d-flex justify-content-center w-100 justify-content-md-start">
-                    <a class="btn-mentor btn-mentor-black" href="#">Learn more</a>
+                <div class="d-flex justify-content-center justify-content-md-start">
+                    <a href="#" class="btn-mentor btn-mentor-black">Learn more</a>
                 </div>
 
-                <div class="icons">
-                    <img src="images/client-databiz.svg" alt="Client databiz icon" class="icon">
+                <div class="icons d-flex flex-wrap">
+                    <li>
+                        <img src="images/client-databiz.svg" class="size-image" alt="Client databiz icon">
+                    </li>
 
-                    <img src="images/client-audiophile.svg" alt="Client databiz icon" class="icon">
+                    <li>
+                        <img src="images/client-audiophile.svg" class="size-image" alt="Client databiz icon">
+                    </li>
 
-                    <img src="images/client-meet.svg" alt="Client databiz icon" class="icon">
+                    <li>
+                        <img src="images/client-meet.svg" class="size-image" alt="Client databiz icon">
+                    </li>
 
-                    <img src="images/client-maker.svg" alt="Client databiz icon" class="icon">
+                    <li>
+                        <img src="images/client-maker.svg" class="size-image" alt="Client databiz icon">
+                    </li>
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 d-flex justify-content-center no-padding">
+            <div class="col-12 col-md-6 d-flex justify-content-center">
                 <picture>
-                    <source media="(max-width: 768px)" srcset="images/image-hero-mobile.png" style="margin-left: -12px; margin-right: 12px; width: auto; ">
+                    <source media="(max-width: 768px)" srcset="images/image-hero-mobile.webp">
 
-                    <img src="images/image-hero-desktop.png" alt="Product mobile image" class="product-img">
+                    <img src="images/image-hero-desktop.webp" alt="Product mobile image" class="product-img">
                 </picture>
             </div>
         </div>
